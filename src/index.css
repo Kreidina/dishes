@@ -3,15 +3,6 @@
 :root {
   --white-text-color: #fff;
   --black-text-color: #000;
-
-  /*--bg-modal-grey: rgba(18, 20, 23, 0.5);
-  --filter-grey: rgba(18, 20, 23, 0.2);
-  --grey: rgba(18, 20, 23, 0.1);
-  --title-grey: #8a8a89;
-  --text-color: #363535;
-  --input-color: #f7f7fb;
-  --white-color: #ffffff;
-  --hover-blue: #0b44cd; */
   --accent-color: #83a954;
   /* --shadow-hover: 7px 13px 14px rgba(116, 177, 232, 0.24);
   --shadow-input-hover: 7px 9px 9px rgba(73, 96, 117, 0.1); */
@@ -56,6 +47,7 @@ button,
 select {
   font: inherit;
   outline: none;
+  border: none;
 }
 
 button {
@@ -69,6 +61,7 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   min-width: 320px;
+  max-width: 1600px;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,10 +74,13 @@ body {
 .mainContainer {
   margin: 0 auto;
   width: 320px;
+  /* max-width: 480px; */
   @media screen and (min-width: 768px) {
+    /* max-width: 768px; */
     width: 768px;
   }
   @media screen and (min-width: 1280px) {
+    /* max-width: 1280px; */
     width: 1280px;
   }
 }

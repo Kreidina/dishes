@@ -1,0 +1,25 @@
+.section {
+  padding: 40px 74px;
+
+  height: 300px;
+  @media screen and (min-width: 768px) {
+    padding: 70 32px;
+
+    height: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 118px 70px;
+  }
+}
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}

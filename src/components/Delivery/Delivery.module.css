@@ -1,13 +1,16 @@
 .section {
   background-color: rgba(34, 34, 34, 0.55);
   padding: 40px 0;
+  background-repeat: no-repeat;
+
   @media screen and (min-width: 768px) {
     padding: 28px 30px 55px;
     background-color: none;
     background-image: url("../../images/delivery/delivery1m.jpg");
   }
   @media screen and (min-width: 1280px) {
-    /* padding: 0 70px; */
+    padding: 54px 71px 120px;
+    background-image: url("../../images/delivery/delivery1l.jpg");
   }
 }
 .title {
@@ -20,6 +23,10 @@
     text-align: start;
     font-size: 24px;
     margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    margin-bottom: 67px;
   }
 }
 .list {
@@ -39,6 +46,11 @@
     background-color: rgba(243, 243, 243, 0.45);
     padding: 27px 18px 10px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 310px;
+    height: 315px;
+    padding: 35px 31px;
+  }
 }
 .item:not(:last-child) {
   margin-bottom: 38px;
@@ -56,6 +68,10 @@
     color: #000;
     margin: 7px 0 10px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    margin: 18px 0 30px;
+  }
 }
 .text {
   color: #c0c0c0;
@@ -66,6 +82,9 @@
     color: #000;
     padding: 0;
     text-align: start;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
   }
 }
 .icon {
@@ -78,5 +97,11 @@
   margin: 0 137px;
   @media screen and (min-width: 768px) {
     margin: 0 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100px;
+    height: 100px;
+    padding: 17.5px;
+    margin: 0 74px;
   }
 }

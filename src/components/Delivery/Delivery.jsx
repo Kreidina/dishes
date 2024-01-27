@@ -1,13 +1,26 @@
-import { File, Phone, Wallet } from "../../helpers/icons";
+import {
+  File,
+  FileBig,
+  Phone,
+  PhoneBig,
+  Wallet,
+  WalletBig,
+} from "../../helpers/icons";
+import PropTypes from "prop-types";
+
 import css from "./Delivery.module.css";
 
-const Delivery = () => {
+const Delivery = ({ isDesktop }) => {
   return (
     <section className={css.section}>
       <h2 className={css.title}>Доставка та оплата</h2>
       <ul className={css.list}>
         <li className={css.item}>
-          <File className={css.icon} />
+          {!isDesktop ? (
+            <File className={css.icon} />
+          ) : (
+            <FileBig className={css.icon} />
+          )}
           <h3 className={css.titleStep}>Заявка</h3>
           <p className={css.text}>
             Залишаєте номер телефону та Ваше ім’я. Менеджер буде телефонувати
@@ -15,14 +28,22 @@ const Delivery = () => {
           </p>
         </li>
         <li className={css.item}>
-          <Phone className={css.icon} />
+          {!isDesktop ? (
+            <Phone className={css.icon} />
+          ) : (
+            <PhoneBig className={css.icon} />
+          )}
           <h3 className={css.titleStep}>Дзвінок</h3>
           <p className={css.text}>
             Менеджер передзвонить Вам для уточнення деталей протягом дня
           </p>
         </li>
         <li className={css.item}>
-          <Wallet className={css.icon} />
+          {!isDesktop ? (
+            <Wallet className={css.icon} />
+          ) : (
+            <WalletBig className={css.icon} />
+          )}
           <h3 className={css.titleStep}>Отримання</h3>
           <p className={css.text}>
             При замовленні за товар сплачуєте повністю по предоплаті Доставляємо
@@ -35,3 +56,7 @@ const Delivery = () => {
 };
 
 export default Delivery;
+
+Delivery.propTypes = {
+  isDesktop: PropTypes.bool,
+};

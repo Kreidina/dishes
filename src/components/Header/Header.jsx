@@ -1,30 +1,12 @@
-import { useState } from "react";
 import { IconFace, IconInsta, IconMenu } from "../../helpers/icons";
+import PropTypes from "prop-types";
+
+import css from "./Header.module.css";
 
 import Logo from "../Logo/Logo";
-import css from "./Header.module.css";
-import { useEffect } from "react";
 import Nav from "../Nav/Nav";
 
-const Header = () => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1280);
-  const [isTablet, setIsTablet] = useState(
-    window.innerWidth >= 768 && window.innerWidth < 1280
-  );
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1280);
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1280);
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+const Header = ({ isMobile, isTablet, isDesktop }) => {
   return isMobile ? (
     <>
       <Logo />
@@ -40,3 +22,8 @@ const Header = () => {
 };
 
 export default Header;
+Header.propTypes = {
+  isMobile: PropTypes.bool,
+  isTablet: PropTypes.bool,
+  isDesktop: PropTypes.bool,
+};

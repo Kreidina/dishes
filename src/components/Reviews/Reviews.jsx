@@ -1,7 +1,9 @@
+import css from "./Reviews.module.css";
+
 const Reviews = () => {
   return (
-    <section>
-      <h2>Відгуки</h2>
+    <section className={css.section}>
+      <h2 className={css.title}>Відгуки</h2>
       <p>Спінер</p>
     </section>
   );
