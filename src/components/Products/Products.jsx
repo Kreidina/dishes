@@ -77,7 +77,7 @@ const Products = () => {
         </ModalContainer>
       )}
       {isModalBuyOpen && (
-        <ModalContainer toggleModalBuy={toggleModalBuy}>
+        <ModalContainer toggleModal={toggleModalBuy}>
           <ModalBuy />
         </ModalContainer>
       )}
