@@ -1,8 +1,8 @@
 import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
 import Main from "./pages/Main";
 import Order from "./pages/Order";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (

@@ -1,7 +1,20 @@
+import { IconFace, IconInsta, Right } from "../../helpers/icons";
+
 const Footer = () => {
   return (
     <>
       <ul>
+        <li>
+          <IconFace />
+          <IconInsta />
+          <h2>Замовити дзвінок</h2>
+          <form>
+            <input />
+            <button>
+              <Right />
+            </button>
+          </form>
+        </li>
         <li>
           <h2>Меню</h2>
           <ul>
@@ -29,15 +42,6 @@ const Footer = () => {
         <li>
           <h2>Графік роботи</h2>
           <p>Без вихідних з 10:00 до 18:00</p>
-        </li>
-        <li>
-          <h2>Замовити дзвінок</h2>
-          <form>
-            <input />
-            <button>замовити</button>
-          </form>
-          <p>icon</p>
-          <p>icon</p>
         </li>
       </ul>
     </>

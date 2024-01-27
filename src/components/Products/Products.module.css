@@ -1,0 +1,111 @@
+.productsContainer {
+  padding: 40px 18px;
+  @media screen and (min-width: 768px) {
+    padding: 70px 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 120px 70px;
+  }
+}
+.title {
+  color: #050505;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+.productList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.productItem {
+  width: 250px;
+  @media screen and (min-width: 768px) {
+    width: 290px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+  }
+}
+.productItem:not(:last-child) {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.img {
+  width: 163px;
+  height: 170px;
+  @media screen and (min-width: 768px) {
+    width: 260px;
+    height: 270px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 440px;
+    height: 460px;
+  }
+}
+.productTitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.text {
+  text-align: center;
+  margin: 8px 0 21px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    margin: 3px 0 15px;
+  }
+}
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+  }
+}
+.btn {
+  padding: 7px;
+  text-align: center;
+  background-color: inherit;
+  font-size: 16px;
+  width: 115px;
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+    font-size: 18px;
+    width: 132px;
+  }
+}
+.btnAbout {
+  color: #3d3d3d;
+  border: 1px solid #383838;
+  @media screen and (min-width: 1280px) {
+    margin-right: 20px;
+  }
+}
+.btnBuy {
+  color: #efefef;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}

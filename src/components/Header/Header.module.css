@@ -1,0 +1,15 @@
+.socialIcons {
+  margin: 26px 0;
+  width: 48px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social {
+  fill: var(--accent-color);
+}
+.menu {
+  margin: 30px 0 24px;
+  fill: var(--accent-color);
+}

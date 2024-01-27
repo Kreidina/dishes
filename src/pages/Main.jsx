@@ -1,8 +1,16 @@
+import Delivery from "../components/Delivery/Delivery";
+import Hero from "../components/Hero/Hero";
+import Products from "../components/Products/Products";
+import Reviews from "../components/Reviews/Reviews";
+
 const Main = () => {
   return (
-    <div>
-      <h1>Main</h1>
-    </div>
+    <>
+      <Hero />
+      <Products />
+      <Delivery />
+      <Reviews />
+    </>
   );
 };
 
