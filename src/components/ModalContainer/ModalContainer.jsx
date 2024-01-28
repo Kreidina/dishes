@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import { useEffect } from "react";
 
 import css from "./ModalContainer.module.css";
-import { CloseIcon } from "../../helpers/icons";
+import { CloseIconSmall } from "../../helpers/icons";
 
 const modalContainer = document.getElementById("modal-root");
 
@@ -27,6 +27,7 @@ const ModalContainer = ({ toggleModal, children }) => {
       document.body.style.overflow = "auto";
     };
   }, [toggleModal]);
+
   const onBackdroplOpen = (event) => {
     if (event.target === event.currentTarget) {
       toggleModal();
@@ -42,7 +43,7 @@ const ModalContainer = ({ toggleModal, children }) => {
             type="button"
             onClick={toggleModal}
           >
-            <CloseIcon className={css.iconClose} />
+            <CloseIconSmall />
           </button>
           {children}
         </div>

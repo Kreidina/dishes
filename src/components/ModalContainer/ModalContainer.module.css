@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg-modal-grey);
+  background-color: rgba(34, 34, 34, 0.55);
   backdrop-filter: blur(1.2px);
 }
 
@@ -17,22 +17,40 @@
   transform: translate(-50%, -50%);
   width: 95%;
   height: 95%;
-  padding: 40px;
   border-radius: 24px;
   background-color: #ffffff;
-  max-width: 541px;
-  max-height: 752px;
+  max-width: 450px;
+  max-height: 500px;
   overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    max-width: 735px;
+    max-height: 469px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    max-height: 751px;
+  }
 }
 
 .modalCloseBtn {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 14px;
+  right: 14px;
   border: none;
   background-color: inherit;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 768px) {
+    top: 16px;
+    right: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 35px;
+    height: 35px;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 /* .iconClose {

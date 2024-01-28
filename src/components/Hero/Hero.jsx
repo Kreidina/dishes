@@ -1,7 +1,7 @@
 import { useState } from "react";
 import css from "./Hero.module.css";
 import ModalContainer from "../ModalContainer/ModalContainer";
-import ModalAbout from "../ModalAbout/ModalAbout";
+import ModalBuy from "../ModalBuy/ModalBuy";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +21,7 @@ const Hero = () => {
       </button>
       {isModalOpen && (
         <ModalContainer toggleModal={toggleModal}>
-          <ModalAbout />
+          <ModalBuy />
         </ModalContainer>
       )}
     </section>

@@ -31,7 +31,7 @@ const Layout = () => {
         <Header isMobile={isMobile} isTablet={isTablet} isDesktop={isDesktop} />
       </header>
       <main className={css.main}>
-        <Outlet isDesktop={isDesktop} />
+        <Outlet />
       </main>
       <footer className={css.footer}>
         <Footer isMobile={isMobile} />

@@ -11,6 +11,7 @@ import PhoneBig from "../images/icons/tell65.svg?react";
 import WalletBig from "../images/icons/wallet65.svg?react";
 import FileBig from "../images/icons/file65.svg?react";
 import CloseIcon from "../images/icons/close.svg?react";
+import CloseIconSmall from "../images/icons/smallClose.svg?react";
 import SmallPlus from "../images/icons/plus.svg?react";
 import SmallMinus from "../images/icons/minus.svg?react";
 import IconOk from "../images/icons/ok.svg?react";
@@ -29,6 +30,7 @@ export {
   WalletBig,
   FileBig,
   CloseIcon,
+  CloseIconSmall,
   SmallPlus,
   SmallMinus,
   IconOk,
