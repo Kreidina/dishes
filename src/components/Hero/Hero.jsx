@@ -2,6 +2,7 @@ import { useState } from "react";
 import css from "./Hero.module.css";
 import ModalContainer from "../ModalContainer/ModalContainer";
 import ModalBuy from "../ModalBuy/ModalBuy";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,9 +17,9 @@ const Hero = () => {
       <h1 className={css.title}>
         Заварюйте улюблений чай з комфортом і стилем
       </h1>
-      <button type="button" onClick={toggleModal} className={css.btn}>
+      <NavLink to="/order" className={css.btn}>
         ПРИДБАТИ ТОВАР
-      </button>
+      </NavLink>
       {isModalOpen && (
         <ModalContainer toggleModal={toggleModal}>
           <ModalBuy />

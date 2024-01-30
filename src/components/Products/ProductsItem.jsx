@@ -5,6 +5,7 @@ import css from "./Products.module.css";
 import ModalContainer from "../ModalContainer/ModalContainer";
 import ModalAbout from "../ModalAbout/ModalAbout";
 import ModalBuy from "../ModalBuy/ModalBuy";
+import { NavLink } from "react-router-dom";
 
 const ProductsItem = ({ item }) => {
   const { name, title, img } = item;
@@ -34,13 +35,9 @@ const ProductsItem = ({ item }) => {
           >
             Про товар
           </button>
-          <button
-            type="button"
-            className={`${css.btn} ${css.btnBuy}`}
-            onClick={toggleModalBuy}
-          >
+          <NavLink to="/order" className={`${css.btn} ${css.btnBuy}`}>
             Купити
-          </button>
+          </NavLink>
         </div>
       </li>
       {isModalOpen && (

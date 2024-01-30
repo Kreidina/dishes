@@ -10,9 +10,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
-          <Route path="/order" element={<Order />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
+        <Route path="/order" element={<Order />} />
       </Routes>
     </>
   );
