@@ -23,7 +23,8 @@ const Order = () => {
   // }, []);
   return (
     <>
-      <Left />
+      <Left style={{ stroke: "var(--accent-color)" }} />
+      {/* <LeftBig/> */}
       <h1
         style={{
           textAlign: "center",

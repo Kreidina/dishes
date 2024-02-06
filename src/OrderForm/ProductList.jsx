@@ -12,17 +12,19 @@ const ProductList = () => {
           return (
             <li key={index} className={css.item}>
               <img alt={name} src={img} className={css.img} />
-              <h2 className={css.name}>{name}</h2>
-              <p className={css.title}>{title}</p>
-              <p className={css.article}>{article}</p>
-              <SmallMinus className={css.minus} />
-              {/* {count} */}
-              <span className={css.count}>0</span>
-              <SmallPlus className={css.plus} />
-              <p className={css.price}>
-                {/* {countPrice} грн*/}
-                {price} грн
-              </p>
+              <div className={css.infoContainer}>
+                <h2 className={css.name}>{name}</h2>
+                <p className={css.title}>{title}</p>
+                <p className={css.article}>{article}</p>
+                <SmallMinus className={css.minus} />
+                {/* {count} */}
+                <span className={css.count}>0</span>
+                <SmallPlus className={css.plus} />
+                <p className={css.price}>
+                  {/* {countPrice} грн*/}
+                  {price} грн
+                </p>
+              </div>
             </li>
           );
         })}
